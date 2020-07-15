@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="13">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_settings"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/toolbar_settings"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Close"
+                    android:id="@+id/close"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|left|center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Update"
+                    android:id="@+id/update"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:gravity="end|right|center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo_upload"
+            android:layout_width="0dp"
+            android:layout_margin="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/profile" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="16sp"
+        android:text="Change profile"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="9"
+        android:orientation="vertical"
+        android:background="@drawable/cornerradius"
+        android:layout_weight="9">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+        <EditText
+            android:id="@+id/customer_name"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/new_cursor"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:letterSpacing="0.05"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"></View>
+
+        <EditText
+            android:id="@+id/customer_phone"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/new_cursor"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:letterSpacing="0.05"
+            android:maxLength="10"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"></View>
+
+        <EditText
+            android:id="@+id/customer_email"
+            android:hint="Email ID "
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/new_cursor"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorPrimary"
+            android:letterSpacing="0.05"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"></View>
+
+        <EditText
+            android:id="@+id/customer_addr"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:layout_height="0dp"
+            android:paddingTop="6dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Address" />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:text="Your Information is safe with us."
+            android:gravity="center"/>
+
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:id="@+id/submit_btn"
+                android:background="@drawable/button_design"
+                android:text="Done"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
